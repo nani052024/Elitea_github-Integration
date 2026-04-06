@@ -1,5 +1,6 @@
 import { test, expect } from '@playwright/test';
 
 test('Login to Epam', async ({ page }) => {
-  // Steps will be added incrementally.
+  // Navigate to https://www.epam.com/
+  await page.goto('https://www.epam.com/');
 });

@@ -9,4 +9,7 @@ test('Login to Epam', async ({ page }) => {
 
   // Click the "Explore Our Client Work" link.
   await page.getByRole('link', { name: 'Explore Our Client Work' }).click();
+
+  // Verify that the "Client Work" text is visible on the page.
+  await expect(page.getByText('Client Work', { exact: false })).toBeVisible();
 });

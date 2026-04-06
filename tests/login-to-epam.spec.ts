@@ -3,4 +3,7 @@ import { test, expect } from '@playwright/test';
 test('Login to Epam', async ({ page }) => {
   // Navigate to https://www.epam.com/
   await page.goto('https://www.epam.com/');
+
+  // Select "Services" from the header menu
+  await page.getByRole('link', { name: 'Services' }).click();
 });

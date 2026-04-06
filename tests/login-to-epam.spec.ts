@@ -6,4 +6,7 @@ test('Login to Epam', async ({ page }) => {
 
   // Select "Services" from the header menu
   await page.getByRole('link', { name: 'Services' }).click();
+
+  // Click the "Explore Our Client Work" link.
+  await page.getByRole('link', { name: 'Explore Our Client Work' }).click();
 });
